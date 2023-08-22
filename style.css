@@ -100,9 +100,9 @@ h1 + p {
 }
 
 .plan > h3 > span {
-  background-color: var(--base-color-blue-700);
+  background-color: var(--base-color-yellow-900);
   padding: 0.8rem 1.2rem;
-  color: var(--base-color-white);
+  color: var(--base-color-blue-900);
   font-size: 1.4rem;
   border-radius: 2rem;
 }
@@ -199,5 +199,10 @@ h1 + p {
 
   & > .plan-content > button:hover {
     background-color: #0f3c7c;
+  }
+
+  & > h3 > span {
+    color: var(--base-color-white);
+    background-color: var(--base-color-blue-900);
   }
 }
