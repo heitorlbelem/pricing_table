@@ -80,7 +80,6 @@ h1 + p {
   background-color: var(--base-color-white);
   color: var(--base-color-gray-400);
 
-  padding: 3rem;
   border-radius: 8px;
   box-shadow: 0px 1px 2px 0px #8e96b940;
   height: 100%;
@@ -92,12 +91,28 @@ h1 + p {
   color: var(--base-color-blue-900);
   font-size: 1.8rem;
   font-weight: 600;
+
+  padding: 2rem 3rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plan > h3 > span {
+  background-color: var(--base-color-blue-700);
+  padding: 0.8rem 1.2rem;
+  color: var(--base-color-white);
+  font-size: 1.4rem;
+  border-radius: 2rem;
 }
 
 .plan-content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  padding: 2rem 3rem 0;
 }
 
 .plan-content > header > p {
@@ -156,44 +171,24 @@ h1 + p {
   width: 100%;
 
   cursor: pointer;
-  margin-top: 3rem;
 }
 
 .plan {
-  transition: all 0.2s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .plan:hover {
-  transform: translateY(-20px);
-  height: 49rem;
+  transform: scale(1.05);
   padding: 0;
   overflow: hidden;
   cursor: pointer;
 
   & > h3 {
     background-color: var(--base-color-yellow-900);
-    color: var(--base-color-blue-700);
-    padding: 2rem;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  & > h3 > span {
-    background-color: var(--base-color-blue-700);
-    color: var(--base-color-white);
-    padding: 0.8rem 2.4rem;
-    border-radius: 4rem;
-    background: #1d539e;
-
-    text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-weight: 600;
-  }
 
-  & > .plan-content {
-    padding: 1rem 3rem;
+    padding: 2rem 3rem;
   }
 
   & > .plan-content > button {
